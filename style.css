@@ -1,29 +1,29 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-ul{list-style: none;}
+ul { list-style: none; }
 
-body{
+body {
     background-color: rgb(245, 235, 250);
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
-h1{font-size: 3.5em;}
-h2{font-size: 2.7em;}
-h3{font-size: 2em;}
-p{font-size: 1.25em;}
+h1 { font-size: 8vw; }
+h2 { font-size: 6vw; }
+h3 { font-size: 4.5vw; }
+p { font-size: 1rem; }
 
-button{
-    font-size: 1.25em;
+button {
+    font-size: 1rem;
     font-weight: bold;
-    padding: 10px 30px;
+    padding: 0.6em 1.5em;
     border-radius: 10px;
     border: 2px solid rgba(0, 0, 0, 0.3);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
@@ -31,154 +31,139 @@ button{
     background-color: blueviolet;
 }
 
-button:hover{
+button:hover {
     background-color: rgb(73, 13, 129);
 }
 
-.container{
-max-width: 2000px;
-margin: auto;
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
 }
 
-.color{
-    color: blueviolet;
-}
+.color { color: blueviolet; }
 
-header{
+header {
     background-color: rgb(245, 235, 250);
+    position: sticky;
+    top: 0;
+    width: 100%;
 }
 
-header .logo{
- margin: 0;
- padding: 25px 30px;
- font-weight: bold;
- color: blueviolet;
- font-size: 3em;
+header .logo {
+    margin: 0;
+    padding: 1rem;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 2rem;
 }
 
-header .container{
-padding: 25px 30px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header nav{
+header nav {
     display: flex;
     flex-direction: column;
     text-align: right;
-    padding-bottom: 25px;
+    gap: 0.5rem;
 }
 
-header a{
-    padding: 5px 12px;
+header a {
+    padding: 0.5rem;
     text-decoration: none;
     font-weight: bold;
     color: black;
-
 }
 
-header a:hover{
-    color: blueviolet;
-}
+header a:hover { color: blueviolet; }
 
-#hero{
+#hero {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 90vh;
+    min-height: 90vh;
     background-image: linear-gradient(
-        rgb(0,0,0,0.5),
-        rgb(0,0,0,0.5)
-    )
-    ,url(media/hero.jpg);
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(media/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-  
-}
- 
-#hero h1{
-    color: rgb(245, 235, 250);
+    background-position: center;
 }
 
-#somos .container{
+#hero h1 { color: rgb(245, 235, 250); }
+
+#somos .container {
     text-align: center;
-    padding: 200px 12px;
+    padding: 4rem 1rem;
 }
-#somos1{
-    font-size: 2em;
-}
-#somos2{
-    margin: 20px;
-}
-#nuestros{
+
+#somos1 { font-size: 1.5rem; }
+#somos2 { margin: 1rem; }
+
+#nuestros {
     background-color: #1e1e1e;
     color: rgb(245, 235, 250);
     text-align: center;
 }
 
-#nuestros .container{
-    padding: 100px 0px;
-}
+#nuestros .container { padding: 4rem 1rem; }
 
-#nuestros h2{
+#nuestros h2 {
     margin-top: 0;
-    font-size: 3.2em;
+    font-size: 2rem;
 }
 
-#nuestros p{
-    display: none;
-}
+#nuestros p { display: none; }
 
-#nuestros .card{
-     background-position: center center;
+#nuestros .card {
+    background-position: center;
     background-size: cover;
-    padding: 50px;
-    margin: 20px;
+    padding: 2rem;
+    margin: 1rem;
     border-radius: 20px;
-
+    min-height: 250px;
 }
 
-.card:first-child{
-        background-image: linear-gradient(
-        rgb(0,0,0,0.5),
-        rgb(0,0,0,0.5)
-    )
-    ,url(media/front-end.jpg);
+.card:first-child {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(media/front-end.jpg);
 }
 
-
-.card:nth-child(2){
-        background-image: linear-gradient(
-        rgb(0,0,0,0.5),
-        rgb(0,0,0,0.5)
-    )
-    ,url(media/full-stack.jpg);
+.card:nth-child(2) {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(media/full-stack.jpg);
 }
 
-.card:last-child{
-        background-image: linear-gradient(
-        rgb(0,0,0,0.5),
-        rgb(0,0,0,0.5)
-    )
-    ,url(media/python.jpg);
+.card:last-child {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ), url(media/python.jpg);
 }
 
-#caracteristicas .container{
-text-align: center;
-padding: 200px 12px;
+#caracteristicas .container {
+    text-align: center;
+    padding: 4rem 1rem;
 }
 
-#caracteristicas li{
-    font-size: 2em;
-    margin: 15px 0px;
+#caracteristicas li {
+    font-size: 1.5rem;
+    margin: 1rem 0;
     font-weight: bold;
 }
 
-#aplica{
+#aplica {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,164 +171,103 @@ padding: 200px 12px;
     text-align: center;
     background-color: rgb(30, 30, 30);
     color: rgb(245, 235, 250);
-    height: 100vh;
-}
-#aplica h2{
-    font-size: 7vw;
+    min-height: 100vh;
 }
 
-#aplica button{
-    font-size: 4vw;
-}
+#aplica h2 { font-size: 7vw; }
+#aplica button { font-size: 4vw; }
 
-footer{
+footer {
     background-color: rgb(30, 30, 30);
-    padding: 10px;
+    padding: 1rem;
     margin: 0;
 }
 
-footer p{
+footer p {
     color: rgba(255, 255, 255, 0.5);
     text-align: center;
 }
 
-@media (min-width: 1000px){
-    
-    header{
-        position: fixed;
-        width: 100%;
-    }
-    header .container{
-        justify-content: space-between;
-    }
-    
-    header nav{
-        display: flex;
+/* Tablets */
+@media (min-width: 768px) {
+    header nav {
         flex-direction: row;
-        padding-bottom: 0px;
-        font-size: 1.3em;
+        font-size: 1.1rem;
     }
 
-    #hero h1{
-        font-size: 5em;
-    }
-
-    #somos .container{
-    display: flex;
-    justify-content: center;
-    align-items:end;
-    }
-
-    #somos .texto{
-        width: 50%;
-        max-width: 9000px;
+    #somos .container {
         display: flex;
-        flex-direction: column;
-        align-items: left;
+        justify-content: center;
+        align-items: center;
         text-align: left;
-        padding: 0px 30px;
     }
 
-    #somos .imgContainer1{
-          background-image: url(media/somos-proya.jpg);
+    #somos .texto {
+        width: 50%;
+        padding: 1rem;
+    }
+
+    #somos .imgContainer1 {
+        background-image: url(media/somos-proya.jpg);
         background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 500px;
-        
+        background-position: center;
+        flex: 1;
+        min-height: 300px;
     }
 
-    #nuestros .programas{
+    #nuestros .programas {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
-    #nuestros .card h3{
-        padding-top: 30px;
+    #nuestros .card {
+        flex: 1 1 250px;
+        max-width: 300px;
     }
 
-    #nuestros .programas p{
-        display: block;
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+    #nuestros p { display: block; }
 
-    #nuestros .card{
-        padding: 15px;
-        background-size: auto 150px;
-        background-repeat: no-repeat;
-        background-position-y: 0;
-        background-color: rgba(60, 60, 60, 0.5);
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        height: 500px;
-        width: 300px;
+    #caracteristicas .container {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
     }
 
-    .card:first-child{
-            background-image: linear-gradient(
-            rgb(0,0,0,0.5),
-            rgb(0,0,0,0.5)
-        )
-        ,url(media/front-end-cropped.jpg);
+    #caracteristicas ul {
+        text-align: left;
+        margin-left: 2rem;
     }
 
+    #aplica h2 { font-size: 3rem; }
+    #aplica button { font-size: 1.5rem; }
 
-    .card:nth-child(2){
-            background-image: linear-gradient(
-            rgb(0,0,0,0.5),
-            rgb(0,0,0,0.5)
-        )
-        ,url(media/full-stack-cropped.jpg);
+    footer .container {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    h1 { font-size: 4rem; }
+    h2 { font-size: 3rem; }
+    h3 { font-size: 2rem; }
+
+    #hero h1 { font-size: 5rem; }
+
+    #nuestros .card {
+        height: 400px;
     }
 
-    .card:last-child{
-            background-image: linear-gradient(
-            rgb(0,0,0,0.5),
-            rgb(0,0,0,0.5)
-        )
-        ,url(media/python-cropped.jpg);
-    }
-    
-    #caracteristicas .imgcontainer2{
+    #caracteristicas .imgcontainer2 {
         background-image: url(media/background-2.jpeg);
         background-size: contain;
         background-repeat: no-repeat;
-        background-position: 0 180px;
-        height: 700px;
-        width: 700px;
-        margin: 6vw;
-    }
-        
-    
-
-    #caracteristicas .container{
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #caracteristicas ul{
-        text-align: left;
-        margin-left: 50px;
-    
-    }
-
-    #aplica h2{
-        font-size: 5em;
-    }
-
-    #aplica button{
-        font-size: 2em;
-    }
-
-    footer .container{
-        display: flex;
-        justify-content: flex-end;
+        background-position: center;
+        flex: 1;
+        min-height: 400px;
+        margin: 2rem;
     }
 }
