@@ -52,31 +52,38 @@ header {
 
 header .logo {
     margin: 0;
-    padding: 1rem;
+    padding: 0.5rem;
     font-weight: bold;
     color: blueviolet;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 header .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column; /* logo arriba, nav abajo */
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 header nav {
     display: flex;
-    flex-direction: column;
-    text-align: right;
+    flex-direction: row; /* enlaces en fila */
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 0.5rem;
 }
 
 header a {
-    padding: 0.5rem;
+    padding: 0.3rem 0.6rem;
     text-decoration: none;
     font-weight: bold;
+    font-size: 0.9rem;
     color: black;
+    text-align: center;
+    white-space: pre-line; /* permite saltos de línea */
+    word-break: break-word; /* fuerza corte si es necesario */
 }
 
 header a:hover { color: blueviolet; }
@@ -128,8 +135,10 @@ header a:hover { color: blueviolet; }
     padding: 2rem;
     margin: 1rem;
     border-radius: 20px;
-    min-height: 250px;
+    min-height: 150px;
 }
+#nuestros .card p { margin: 20px; }
+#nuestros .card h3 { margin: 20px; }
 
 .card:first-child {
     background-image: linear-gradient(
@@ -174,7 +183,7 @@ header a:hover { color: blueviolet; }
     min-height: 100vh;
 }
 
-#aplica h2 { font-size: 7vw; }
+#aplica h2 { font-size: 7vw; margin-top: 15vw; }
 #aplica button { font-size: 4vw; }
 
 footer {
@@ -190,10 +199,29 @@ footer p {
 
 /* Tablets */
 @media (min-width: 768px) {
+    header .container {
+        flex-direction: row; /* logo izquierda, nav derecha */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .logo {
+        font-size: 2rem;
+        text-align: left;
+    }
+
     header nav {
         flex-direction: row;
+        gap: 1rem;
+        text-align: right;
         font-size: 1.1rem;
+        
     }
+
+     header a br {
+        display: none;
+    }
+
 
     #somos .container {
         display: flex;
@@ -257,9 +285,7 @@ footer p {
 
     #hero h1 { font-size: 5rem; }
 
-    #nuestros .card {
-        height: 400px;
-    }
+    #nuestros .card { height: 400px; }
 
     #caracteristicas .imgcontainer2 {
         background-image: url(media/background-2.jpeg);
