@@ -45,7 +45,7 @@ button:hover {
 
 header {
     background-color: rgb(245, 235, 250);
-    position: sticky;
+    position: static;
     top: 0;
     width: 100%;
 }
@@ -199,6 +199,11 @@ footer p {
 
 /* Tablets */
 @media (min-width: 768px) {
+    
+    header{
+        position: sticky;
+    }
+
     header .container {
         flex-direction: row; /* logo izquierda, nav derecha */
         justify-content: space-between;
